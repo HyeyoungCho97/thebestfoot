@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class main {
 	
 	public static void main(String[] args) {
-		
+		/*
 		CircularQueue cqueue = new CircularQueue(5);
 		
 		System.out.println("Circular Queue 테스트");
@@ -27,6 +27,28 @@ public class main {
 		
 		
 		System.out.println(cqueue.Dequeue());
+		*/
+		
+		LinkedlistQueue lqueue = new LinkedlistQueue();
+		
+		System.out.println("Linkedlist Queue 테스트");
+		
+		//큐에 데이터 삽입
+		for(int i =1; i<=5; i++) {
+			lqueue.Enqueue("data-"+i);
+		}
+		System.out.println(lqueue.Dequeue());
+		System.out.println(lqueue.Dequeue());
+		System.out.println(lqueue.Dequeue());
+		
+		lqueue.Enqueue("data-6");
+		
+		System.out.println(lqueue.Dequeue());
+		System.out.println(lqueue.Dequeue());
+		System.out.println(lqueue.peek());
+		
+		
+		System.out.println(lqueue.Dequeue());
 		
 	}
 }
