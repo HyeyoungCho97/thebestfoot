@@ -2,6 +2,10 @@ package queue;
 
 import java.util.Scanner;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
+
 public class main {
 	
 	public static void main(String[] args) {
@@ -28,7 +32,7 @@ public class main {
 		
 		System.out.println(cqueue.Dequeue());
 		*/
-		
+		/*
 		LinkedlistQueue lqueue = new LinkedlistQueue();
 		
 		System.out.println("Linkedlist Queue 테스트");
@@ -49,6 +53,18 @@ public class main {
 		
 		
 		System.out.println(lqueue.Dequeue());
+		*/
 		
+		 Queue<Integer> queue = new LinkedList<>();
+		 
+		 System.out.println(queue.add(1));
+		 System.out.println(queue.offer(2));
+		 System.out.println(queue.element());
+		 System.out.println(queue.add(3));
+		 System.out.println(queue.peek());
+		 System.out.println(queue.toString());
+		 System.out.println(queue.poll());
+		 System.out.println(queue.remove());
+		 System.out.println(queue.toString());
 	}
 }
